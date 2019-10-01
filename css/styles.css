@@ -49,6 +49,7 @@ span {
 select {
     width: 100%;
     color: #EC6F66;
+    background-color: white;
     text-align-last: center;
     outline-color: #EC6F66;
 }
@@ -57,6 +58,10 @@ select {
     border-radius: 15px;
     width: 100%;
     margin-bottom: 10px;
+}
+
+option {
+    background-color: white;
 }
 
 .result-box {
