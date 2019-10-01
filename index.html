@@ -8,57 +8,54 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-
-    <title>CurrencyConverter</title>
+    <title>Easy $ Converter</title>
 </head>
 
-<body>
+<body background="img/background2.svg">
+    <div class="main-container d-flex row  ">
+        <div
+            class="left-side container d-flex justify-content-center flex-column text-center align-items-center col-12 col-lg-5 py-3 p-md-5">
+            <h1 class="display-4 py-1 text-uppercase font-weight-bold">Easy <i class="text-dark">$</i> <br> Converter
+            </h1>
+            <h3 class="display-5 my-3">Insert the amount that you want to convert and get the result updated in
+                real time</h3>
+        </div>
+        <div class="right-side d-flex flex-column col-12 col-lg-7 justify-content-center p-md-5 mb-sm-5 mb-md-0">
 
-    <div
-        class="container shadow d-flex justify-content-center flex-column text-center align-items-center main-container">
+            <div class=" d-flex flex-column justify-content-around">
+                <div class="currency-container bg-dark d-flex flex-column justify-content-center text-white p-3 shadow">
+                    <label class="py-1 text-center" for="currency">FROM</label>
+                    <select class="form-control-lg" id="currencyFrom">
+                        <option value="usd">USD</option>
+                        <option value="vnd">VND</option>
+                        <option value="eur">EUR</option>
+                        <option value="aud">AUD</option>
+                        <option value="krw">KRW</option>
+                    </select>
+                </div>
+                <div class="currency-container bg-dark d-flex justify-content-center flex-column text-white p-3 shadow">
+                    <label class="py-1 text-center" for="currency">TO</label>
+                    <select class="form-control-lg" id="currencyTo">
+                        <option value="vnd">VND</option>
+                        <option value="eur">EUR</option>
+                        <option value="aud">AUD</option>
+                        <option value="krw">KRW</option>
+                        <option value="usd">USD</option>
+                    </select>
+                </div>
+            </div>
 
+            <input id="amountToConvert" type="number" placeholder="Amount to convert" class="text-center">
 
-        <h1 class="display-4 py-1">Currency Converter</h1>
-        <h3 class="display-5 py-5">Insert the amount that you want to convert <br> and get the result updated in real
-            time</h3>
-
-        <div class="container d-flex justify-content-around">
-            <select class="form-control-lg m-1" style="width: 500px" id="currencyFrom">
-                <option value="usd">USD</option>
-                <option value="vnd">VND</option>
-                <option value="eur">EUR</option>
-                <option value="aud">AUD</option>
-                <option value="krw">KRW</option>
-            </select>
-
-            <select class="form-control-lg m-1" style="width: 500px" id="currencyTo">
-                <option value="vnd">VND</option>
-                <option value="eur">EUR</option>
-                <option value="aud">AUD</option>
-                <option value="krw">KRW</option>
-                <option value="usd">USD</option>
-            </select>
+            <div class="result-box d-flex justify-conmtent-center flex-column py-3">
+                <h4 class="p3-1">Real Time Conversion:</h4>
+                <span class="pb-5 pt-3" id="result">$</span>
+            </div>
         </div>
 
 
-        <input id="amountToConvert" type="number" placeholder="Amount to convert" class="text-center my-5">
-
-        <div class="d-flex justify-conmtent-center result-box flex-column py-3">
-            <h4 class="p3-1">Real Time Conversion:</h4>
-            <span class="py-3" id="result"></span>
-        </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
