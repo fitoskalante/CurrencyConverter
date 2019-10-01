@@ -3,9 +3,42 @@ body {
     height: 800px;
 }
 
+h3 {
+    color:gray;
+}
+
 .main-container {
+    height: 100%;
     background-color: white;
     padding: 100px;
     border-radius: 20px;
-    margin: 10%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input {
+    width: 500px;
+    min-width: 400px;
+    border-radius: 10px;
+    border-color: lightgray;
+}
+
+.result-box {
+    width: 500px;
+    min-width: 400px;
+    background-color:lightblue;
+    border-radius: 10px;
+    height: 200px;
+}
+
+span {
+    color: white;
+    min-width: 500px;
+    width: 500px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+select {
+    min-width: 200px;
 }

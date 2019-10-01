@@ -17,10 +17,11 @@
     <div class="container d-flex justify-content-center flex-column text-center align-items-center main-container">
 
 
-        <h1 class="display-3 py-5">Currency Converter</h1>
+        <h1 class="display-3 py-1">Currency Converter</h1>
+        <h3 class="display-5 py-5">Insert the amount that you want to convert <br> and get the result updated in real time</h3>
 
         <div class="container d-flex justify-content-around">
-            <select class="form-control-lg" style="width: 500px" id="currencyFrom">
+            <select class="form-control-lg m-1" style="width: 500px" id="currencyFrom">
                 <option value="usd">USD</option>
                 <option value="vnd">VND</option>
                 <option value="eur">EUR</option>
@@ -28,7 +29,7 @@
                 <option value="krw">KRW</option>
             </select>
 
-            <select class="form-control-lg" style="width: 500px" id="currencyTo">
+            <select class="form-control-lg m-1" style="width: 500px" id="currencyTo">
                 <option value="vnd">VND</option>
                 <option value="eur">EUR</option>
                 <option value="aud">AUD</option>
@@ -38,16 +39,16 @@
         </div>
 
 
-        <input id="amountToConvert" type="number" placeholder="Amount to convert" class="text-center py-3 my-5"
-            style="width: 500px">
+        <input id="amountToConvert" type="number" placeholder="Amount to convert" class="text-center py-5 my-5">
 
-        <div>
+        <!-- <div>
             <button type="button" class="btn btn-success" id="convertButton">
                 Convert Currency
             </button>
-        </div>
-        <div class="d-flex justify-conmtent-center">
-            <span id="result"></span>
+        </div> -->
+        <div class="d-flex justify-conmtent-center result-box flex-column py-3">
+            <h4 class="p3-1">Real Time Conversion:</h4>
+            <span class="py-3" id="result"></span>
         </div>
 
     </div>
